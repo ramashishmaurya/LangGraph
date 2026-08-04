@@ -1,7 +1,7 @@
 import streamlit as st 
 
 if 'message_history' not in st.session_state:
-    st.session_state['message_history'] = []
+    st.session_state['message_history'] = []  
 
 # loading the conversation history
     
@@ -20,3 +20,5 @@ if user_input:
     st.session_state['message_history'].append({'role':'assistant' , 'content': user_input})
     with st.chat_message('assistance'):
         st.text_input(user_input)
+
+
