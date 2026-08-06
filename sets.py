@@ -12,16 +12,26 @@ print(setsa)
 
 import copy
 
-orinals = [[1,2] , [4,5]]
+def copymethods():
+    orinals = [[1,2] , [4,5]]
 
-shallow = copy.copy(orinals)
+    shallow = copy.copy(orinals)
 
-deep = copy.deepcopy(orinals)
+    deep = copy.deepcopy(orinals)
 
-shallow[0][0] = 10 
-deep[1][1] = 20
+    shallow[0][0] = 10 
+    deep[1][1] = 20
 
-print("originals " , orinals )
-print("shalloww" , shallow)
-print("deep" , deep)
+    print("originals " , orinals )
+    print("shalloww" , shallow)
+    print("deep" , deep)
+
+def function():
+    return "this is sets okay "
+
+
+
+if __name__ == "__main__":
+    print(function())
+ 
 

@@ -51,3 +51,8 @@ print(result.content)
 from langgraph.graph import StateGraph
 
 
+def function():
+    return "this is function okay"
+
+
+

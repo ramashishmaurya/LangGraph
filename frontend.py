@@ -21,4 +21,3 @@ if user_input:
     with st.chat_message('assistance'):
         st.text_input(user_input)
 
-
