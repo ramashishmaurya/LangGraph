@@ -76,3 +76,18 @@ def checkduplicated(nums):
 objects = checkduplicated(numbers)
 
 print(objects)
+
+def containduplicated(nums):
+    hashmap = set()
+
+    for i in nums:
+        if i in hashmap: # if the data is already present then but firrst time of course empty 
+            return True
+        hashmap.add(i) # first time data will be added here 
+    return False
+
+listdata = [1 ,2 , 1,3]
+
+result = containduplicated(listdata)
+print(result)
+print()
