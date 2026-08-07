@@ -33,5 +33,30 @@ def function():
 
 if __name__ == "__main__":
     print(function())
- 
 
+
+nums = [2,7,11,15]
+target = 9 
+# Output: [0,1]
+ 
+def twosum(nums , target):
+    for i , b in enumerate(nums):
+        hashmap  = {}
+        for i , n in enumerate(nums):
+            numbers = target - n 
+            if numbers in hashmap:
+                return [hashmap[numbers] , i ]
+            hashmap[n] = i 
+
+cl = twosum(nums , target)
+print(cl)
+
+
+def printnumber():
+    for i in range(1 ,5):
+        yield i 
+
+obj = printnumber()
+
+for i in obj:
+    print(i)
