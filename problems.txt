@@ -13,3 +13,20 @@ def twosum(nums , target):
              return[ hashmap[compl] , index] # in the second iteration values is catched right 
          else:
              hashmap[values] = i 
+
+# I wanted to impliment  and understand how generator is works 
+
+ Suppose i want to print 1 to 5 but i do not want to load all numbers at once when i need calls in momery 
+
+
+def printnumber():
+    for i in range(1 ,5):
+        yield i  # this is keywords make the generators oaky 
+
+obj = printnumber()
+
+for i in obj: # printing normal serial numbers 
+    print(i)
+
+
+print(next(obj)) = This is Actually generator if u do next only the assign the data in memory not like load whole data as for loop 
