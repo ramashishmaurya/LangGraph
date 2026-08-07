@@ -1,0 +1,15 @@
+nums = [2,7,11,15]
+target = 9
+output = [0 ,1 ]
+
+
+def twosum(nums , target):
+     for index , values in enumerate(nums):
+         hashmap = {}
+
+         comple = target - hashmap 
+
+         if comple in hashmap :
+             return[ hashmap[compl] , i ] # in the second iteration values is catched right 
+         else:
+             hashmap[values] = i 
