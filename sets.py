@@ -60,3 +60,19 @@ obj = printnumber()
 
 for i in obj:
     print(i)
+
+
+# return the listcontain duplicated or not 
+    
+numbers = [1 ,3,4,5]
+
+# if lens(Set) = 4 and orinal num = 4  
+def checkduplicated(nums):
+    if (len(set(nums)) != len(nums)):
+        return True
+    return False
+
+
+objects = checkduplicated(numbers)
+
+print(objects)
