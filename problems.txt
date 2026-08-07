@@ -10,6 +10,6 @@ def twosum(nums , target):
          comple = target - hashmap 
 
          if comple in hashmap :
-             return[ hashmap[compl] , i ] # in the second iteration values is catched right 
+             return[ hashmap[compl] , index] # in the second iteration values is catched right 
          else:
              hashmap[values] = i 
