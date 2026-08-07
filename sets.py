@@ -90,4 +90,23 @@ listdata = [1 ,2 , 1,3]
 
 result = containduplicated(listdata)
 print(result)
-print()
+
+
+# valid anagrams bhaii 
+
+def isAnagram(s , t ):
+
+    if len(s) != len(t):
+        return False
+    
+    counts , countt = {} , {}  # this is counts , countt looks like counts ={'s' : 2 , 'a':3}
+    for i in range(len(s)):
+        counts[s[i]] = 1 + counts.get(s[i] , 0)
+        countt[t[i]] = 1 + countt.get(s[i] , 0)
+    for c in counts:
+        if counts[c] != countt.get(c ,0): # why get now here we are looking the speciafic valeus not index 
+            return False
+        return True
+        
+r = isAnagram("ashish" , "ashish")
+print("result is " , r )
