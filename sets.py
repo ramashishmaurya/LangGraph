@@ -78,9 +78,9 @@ objects = checkduplicated(numbers)
 print(objects)
 
 def containduplicated(nums):
-    hashmap = set()
+    hashmap = set() # always contain the news values right okay 
 
-    for i in nums:
+    for i in nums: 
         if i in hashmap: # if the data is already present then but firrst time of course empty 
             return True
         hashmap.add(i) # first time data will be added here 
@@ -95,8 +95,8 @@ print(result)
 # valid anagrams bhaii 
 
 def isAnagram(s , t ):
-
-    if len(s) != len(t):
+ 
+    if len(s) != len(t):  
         return False
     
     counts , countt = {} , {}  # this is counts , countt looks like counts ={'s' : 2 , 'a':3}
@@ -109,4 +109,47 @@ def isAnagram(s , t ):
         return True
         
 r = isAnagram("ashish" , "ashish")
-print("result is " , r )
+
+
+nums  = [2 , 7 , 11 ,15]
+target = 9 
+
+# this will be solves using the hashmap right 
+
+def twosum(nums , target):
+    hashmap = {}
+
+    for index , values in enumerate(nums):
+        targetedvaleus = target - values
+        if targetedvaleus in hashmap:
+            return [hashmap[targetedvaleus] , index]
+        hashmap[values] =index
+
+result  = twosum(nums , target)
+
+print(result)
+
+# longest prefixstrings 
+
+inputs = ["flower" , "flow" , "flight"]
+
+def longestprefix(v : list[str]):
+    res = ""
+    for i in range(len(v[0])):
+        for n in v:
+            if i == len(n) or n[i] != v[0][i]:
+                return res
+            res += v[0][i]
+        return res
+    
+
+result  = longestprefix(inputs)
+print(result)
+
+
+
+
+
+
+
+
