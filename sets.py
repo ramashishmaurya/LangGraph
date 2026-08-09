@@ -134,7 +134,7 @@ print(result)
 inputs = ["flower" , "flow" , "flight"]
 
 def longestprefix(v : list[str]):
-    res = ""
+    res = "" # longest string is 
     for i in range(len(v[0])):
         for n in v:
             if i == len(n) or n[i] != v[0][i]:
@@ -145,6 +145,32 @@ def longestprefix(v : list[str]):
 
 result  = longestprefix(inputs)
 print(result)
+
+# groups of anagrams 
+class solutions:
+    def groupsanagrams(self , strs):
+
+        groups = {}
+
+        for word in strs:
+            key = " ".join(sorted(word))
+
+            if key not in groups:
+                groups[key] = []
+            
+            groups[key].append(word)
+        print(groups)
+        
+        return list(groups.values())
+    
+abc = solutions()
+print(abc.groupsanagrams(inputs))
+
+
+
+
+
+
 
 
 
