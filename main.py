@@ -12,13 +12,13 @@ llm = ChatGroq(
 )
 
 
-@traceable(name="langsmith-demo")
+@traceable(name="langsmith-demo")  
 def chat(question: str):
     return llm.invoke(question)
 
 response = chat("What is Artificial Intelligence?") 
 
-@traceable
+@traceable (name="summarixation" )
 def summarize():
     response = chat("where we can use the ai ")
 
@@ -27,6 +27,18 @@ def summarize():
     return finalresult
 
 
-finals = summarize()
-print(finals.content)
+@traceable(name='compression')
+
+def summarizertwoline():
+    callsumarize = summarize()
+
+    prompts =f"this is my answer of 10 line on how i can explain to dump guys {callsumarize}"
+
+    result = llm.invoke(prompts)
+
+    return result
+
+results = summarizertwoline()
+
+print(results.content)
 

@@ -30,3 +30,5 @@ for i in obj: # printing normal serial numbers
 
 
 print(next(obj)) = This is Actually generator if u do next only the assign the data in memory not like load whole data as for loop 
+
+

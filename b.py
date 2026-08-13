@@ -64,3 +64,4 @@ result =models.bind_tools([addnumber])
 
 res = models.invoke('what is full form of ai')
 print(res.content)
+

@@ -131,7 +131,7 @@ print(result)
 
 # longest prefixstrings 
 
-inputs = ["flower" , "flow" , "flight"]
+inputs = ["f lower" , "flow" , "flight"]
 
 def longestprefix(v : list[str]):
     res = "" # longest string is 
@@ -156,7 +156,7 @@ class solutions:
             key = " ".join(sorted(word))
 
             if key not in groups:
-                groups[key] = []
+                groups[key] = [] 
             
             groups[key].append(word)
         print(groups)
@@ -165,9 +165,6 @@ class solutions:
     
 abc = solutions()
 print(abc.groupsanagrams(inputs))
-
-
-
 
 
 
