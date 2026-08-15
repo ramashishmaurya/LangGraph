@@ -37,5 +37,3 @@ def maxrepatedvalues(nums):
 
 result = maxrepatedvalues(nums)
 print(result)
-
-# how i needed to make surew how  i how this 
