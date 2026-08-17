@@ -52,5 +52,15 @@ def getuser():
           'class' : 12 
      })
 
+benchmark = [
+    {
+        "question": "Rahul has 5 apples and buys 3 more. How many?",
+        "answer": "8"
+    },
+    {
+        "question": "A shop has 20 items and sells 7. How many remain?",
+        "answer": "13"
 
-# how this is made is to make sne right bhaihow this is need is to make sense  as posisble ways to righ has to make sense as right bhai how i needed to make sense bhaohow thisnis make sende as possible ways is to make sense  as followed right okay how thisnis right okay how this is main focused how this is good to runs bhasi 
+    }
+]
+
