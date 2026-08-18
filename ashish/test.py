@@ -1,3 +1,4 @@
 from loop import printnumber
 
-printnumber()
+def testinitfunction():
+    return 'this si mainfunction'

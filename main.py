@@ -40,5 +40,13 @@ def summarizertwoline():
 
 results = summarizertwoline()
 
+
 print(results.content)
+
+@traceable(name='tracking project ')
+def tracker(name:int):
+    return {
+        'retunvariable' : name
+   }
+
 

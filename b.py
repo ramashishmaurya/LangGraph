@@ -41,27 +41,27 @@
 
 # rs = validateanagrams(inputs)
 # print(rs)
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 
-from langchain_core.tools import tool
+# from langchain_core.tools import tool
 
-@tool
-def addnumber(d:int , c:int):
-    """this function is used for add numbers """
-    return d+c 
+# @tool
+# def addnumber(d:int , c:int):
+#     """this function is used for add numbers """
+#     return d+c 
 
-from langchain_groq import ChatGroq
+# from langchain_groq import ChatGroq
 
-models = ChatGroq(
-    model="llama-3.3-70b-versatile",
-    temperature=0,
-)
+# models = ChatGroq(
+#     model="llama-3.3-70b-versatile",
+#     temperature=0,
+# )
 
-result =models.bind_tools([addnumber])
+# result =models.bind_tools([addnumber])
 
-res = models.invoke('what is full form of ai')
-print(res.content)
+# res = models.invoke('what is full form of ai')
+# print(res.content)
 
